@@ -4,12 +4,12 @@
 using namespace std;
 
 int get_user_value();
-int get_factirial(int number);
+int64_t get_factirial(int number);
 
 int main()
 {
     int students_number, seats_number;
-    int result;
+    int64_t  result;
 
     cout << "Enter the number of students: ";
     students_number = get_user_value();
@@ -36,7 +36,7 @@ int get_user_value() {
     return value;
 }
 
-int get_factirial(int number) {
+int64_t get_factirial(int number) {
     if (number == 0 || number == 1) {
         return 1;
     }
