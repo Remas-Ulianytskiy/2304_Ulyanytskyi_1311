@@ -9,7 +9,7 @@ int64_t get_factirial(int number);
 int main()
 {
     int students_number, seats_number;
-    int64_t  result;
+    int64_t result;
 
     cout << "Enter the number of students: ";
     students_number = get_user_value();
