@@ -4,7 +4,7 @@
 using namespace std;
 
 int get_user_value();
-int64_t get_factirial(int number);
+int64_t get_factirial(const int number);
 
 int main()
 {
@@ -18,7 +18,7 @@ int main()
     seats_number = get_user_value();
     
     if (students_number > seats_number) {
-        cout << "More students than places!";
+        cout << "More students than seats!";
     }
     else
     {
@@ -36,7 +36,7 @@ int get_user_value() {
     return value;
 }
 
-int64_t get_factirial(int number) {
+int64_t get_factirial(const int number) {
     if (number == 0 || number == 1) {
         return 1;
     }
